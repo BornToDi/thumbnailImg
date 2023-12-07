@@ -5,10 +5,10 @@
     <div class="text-red-600 text-2xl text-bold ml-10 py-5">
       Upcoming Product
     </div>
-    <div class="flex row gap-0 mx-10">
+    <div class="flex row gap-0 mx-2 md:mx-10">
 
   <!--first card-->
-  <q-card class="my-card col-3 flex px-3 pt-3 bg-slate-950 " label="Card" @click="card1 = true" >
+  <q-card class="my-card col-12 col-md-6 col-lg-3 flex md:px-3 pt-3 bg-slate-950 " label="Card" @click="card1 = true" >
       <img class="w-full h-48 object-cover" src="~src/assets/1.jpeg">
 
       <q-card-section class="text-white">
@@ -22,7 +22,7 @@
   </q-card>
 
   <!--second card-->
-  <q-card class="my-card col-3 flex px-3 pt-3 bg-slate-950" label="Card" @click="card2 = true" >
+  <q-card class="my-card col-12 col-md-6 col-lg-3 flex md:px-3 pt-3 bg-slate-950" label="Card" @click="card2 = true" >
       <img class="w-full h-48 object-cover" src="~src/assets/2.jpeg">
 
       <q-card-section class="text-white">
@@ -36,7 +36,7 @@
   </q-card>
 
   <!--third card-->
-  <q-card class="my-card col-3 flex px-3 pt-3 bg-slate-950" label="Card" @click="card3 = true" >
+  <q-card class="my-card col-12 col-md-6 col-lg-3 flex md:px-3 pt-3 bg-slate-950" label="Card" @click="card3 = true" >
       <img class="w-full h-48 object-cover" src="~src/assets/3.jpeg">
 
       <q-card-section class="text-white">
@@ -50,7 +50,7 @@
   </q-card>
 
   <!--fourth card-->
-  <q-card class="my-card col-3 flex px-3 pt-3 bg-slate-950" label="Card" @click="card4 = true" >
+  <q-card class="my-card col-12 col-md-6 col-lg-3 flex md:px-3 pt-3 bg-slate-950" label="Card" @click="card4 = true" >
       <img class="w-full h-48 object-cover" src="~src/assets/4.jpeg">
 
       <q-card-section class="text-white">
@@ -64,7 +64,7 @@
   </q-card>
 
   <!--fifth card-->
-  <q-card class="my-card col-3 flex px-3 pt-3 bg-slate-950" label="Card" @click="card5 = true" >
+  <q-card class="my-card col-12 col-md-6 col-lg-3 flex md:px-3 pt-3 bg-slate-950" label="Card" @click="card5 = true" >
       <img class="w-full h-48 object-cover" src="~src/assets/5.jpeg">
 
       <q-card-section class="text-white">
@@ -78,7 +78,7 @@
   </q-card>
 
   <!--sixth card-->
-  <q-card class="my-card col-3 flex px-3 pt-3 bg-slate-950" label="Card" @click="card6 = true" >
+  <q-card class="my-card col-12 col-md-6 col-lg-3 flex md:px-3 pt-3 bg-slate-950" label="Card" @click="card6 = true" >
       <img class="w-full h-48 object-cover" src="~src/assets/6.jpeg">
 
       <q-card-section class="text-white">
@@ -92,7 +92,7 @@
   </q-card>
 
   <!--seventh card-->
-  <q-card class="my-card col-3 flex px-3 pt-3 bg-slate-950" label="Card" @click="card7 = true" >
+  <q-card class="my-card col-12 col-md-6 col-lg-3 flex md:px-3 pt-3 bg-slate-950" label="Card" @click="card7 = true" >
       <img class="w-full h-48 object-cover" src="~src/assets/7.jpeg">
 
       <q-card-section class="text-white">
@@ -448,7 +448,7 @@ export default ({
   setup () {
     return {
       carousel: ref(false),
-      
+
       card1: ref(false),
       card2: ref(false),
       card3: ref(false),
