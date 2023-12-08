@@ -1,11 +1,40 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class=" bg-slate-100">
 
-
+        <q-btn  color="primary" flat icon="menu">
+        <q-menu class=" bg-slate-200">
+          <q-list style="min-width:200px; height: 600px;">
+            <q-item clickable v-close-popup>
+              <q-item-section>New tab</q-item-section>
+            </q-item>
+            <q-item clickable v-close-popup>
+              <q-item-section>New incognito tab</q-item-section>
+            </q-item>
+            <q-separator />
+            <q-item clickable v-close-popup>
+              <q-item-section>Recent tabs</q-item-section>
+            </q-item>
+            <q-item clickable v-close-popup>
+              <q-item-section>History</q-item-section>
+            </q-item>
+            <q-item clickable v-close-popup>
+              <q-item-section>Downloads</q-item-section>
+            </q-item>
+            <q-separator />
+            <q-item clickable v-close-popup>
+              <q-item-section>Settings</q-item-section>
+            </q-item>
+            <q-separator />
+            <q-item clickable v-close-popup>
+              <q-item-section>Help &amp; Feedback</q-item-section>
+            </q-item>
+          </q-list>
+        </q-menu>
+      </q-btn>
         <q-toolbar-title>
-          e-commerce
+          <span class=" text-slate-700">Networld Shop</span>
         </q-toolbar-title>
 
 
@@ -73,7 +102,7 @@ export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    
+
   },
 
   setup () {
